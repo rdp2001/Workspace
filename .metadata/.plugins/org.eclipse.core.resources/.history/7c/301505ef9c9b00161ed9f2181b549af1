@@ -1,0 +1,18 @@
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		int sum = 1;
+		int i = 0;
+		int odd = 1;
+		int[] squares = new int[100];
+		while(i<100) {
+			squares[i] = sum;
+			odd = 3*odd*(odd+1);
+			sum += odd;
+			System.out.println(squares[i]);
+			i++;
+		}
+	}
+
+}

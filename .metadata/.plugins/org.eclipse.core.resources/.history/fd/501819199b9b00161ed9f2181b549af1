@@ -1,0 +1,15 @@
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		int sum = 1;
+		int i = 1;
+		int[] squares = new int[100];
+		while(i<=100) {
+			squares[i] = sum;
+			sum += 2;
+			System.out.println(i++);
+		}
+	}
+
+}
