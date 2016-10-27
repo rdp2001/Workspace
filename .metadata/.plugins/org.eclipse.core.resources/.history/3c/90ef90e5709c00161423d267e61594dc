@@ -1,0 +1,14 @@
+package Quarter1;
+
+public class ArrayOfHope {
+
+	public static void main(String[] args) {
+		int j = 0;
+		char[] ch = new char[27];
+		for(int i = 65; i<=90; i++) {
+			ch[j++] = (char)i;
+			System.out.println(ch[j]);
+		}
+	}
+
+}

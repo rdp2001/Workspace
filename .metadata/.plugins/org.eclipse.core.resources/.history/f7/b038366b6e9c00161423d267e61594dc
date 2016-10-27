@@ -33,10 +33,15 @@ public class Hello {
 //			sgt[i] = Math.sqrt(i);
 //			System.out.println(sgt[i]);
 //		  }
-		int[] test = {1,2,3,4,-5};
+		int[] test = {1,2,-3,4};
 		int indx;
-		for(indx = 0; indx<test.length&&test[indx]>=0; indx++);
-		System.out.println(indx);
+		for(indx = 0; test[indx]>=0; indx++)
+			if (indx==test.length-1){
+				indx+=2; 
+				break;}
+		System.out.println(--indx);
+		
+		
 	}
 
 }
